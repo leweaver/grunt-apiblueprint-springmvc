@@ -1,0 +1,33 @@
+{
+  "name": "grunt-apiblueprint-springmvc",
+  "version": "0.1.0",
+  "description": "Allows execution of the apiblueprint-springmvc generator, to generate SpringMVC source files from an apiblueprint specification.",
+  "homepage": "https://github.com/ransico/grunt-apiblueprint-springmvc",
+  "repository": "git@github.com:ransico/grunt-apiblueprint-springmvc.git",
+  "author": {
+    "name": "Lewis Weaver",
+    "email": "ransico@gmail.com",
+    "url": ""
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "jshint-stylish": "~0.1.5",
+    "load-grunt-tasks": "~0.3.0",
+    "mkdirp": "^0.5.1",
+    "apiblueprint-springmvc": "^0.1.1"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}

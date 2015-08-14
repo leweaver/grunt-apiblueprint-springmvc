@@ -1,0 +1,59 @@
+# Group Lookup Types
+
+## Single Lookup Type [/lookup-type/{lookupType}]
+This resource represents one particular lookup type identified by its *lookupType*.
+
++ Parameters
+
+    + lookupType: `GENDER` (string, required) - The lookup type code
+
+### Retrieve Lookup Type [GET]
+Retrieve a lookup type by its *lookupType*.
+
++ Attributes (ReadSingleResponse[LookupType])
+
++ Response 200 (application/json)
+
+        {
+            "success": true,
+            "result": {
+                "lookupType": "GENDER",
+                "displayName": "Gender",
+                "enabledFlag": "Y"
+            }
+        }
+
+### Update Lookup Type [PUT]
+Modify a lookup type by its *lookupType*.
+
++ Attributes (OperationResponse[LookupType])
+
++ Request (application/json)
+    + Attributes (LookupType)
+    + Body
+
+            {
+                "lookupType": "GENDER",
+                "displayName": "Gender",
+                "enabledFlag": "N"
+            }
+
++ Response 200 (application/json)
+
+        {
+            "success": true,
+            "result": {
+                "lookupType": "GENDER",
+                "displayName": "Gender",
+                "enabledFlag": "N"
+            }
+        }
+
++ Response 400 (application/json)
+
+        {
+            "success": false,
+            "errors": [
+                { "field": "enabledFlag", "message": "Must have value 'Y' or 'N'" }
+            ]
+        }
