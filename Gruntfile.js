@@ -33,23 +33,13 @@ module.exports = function (grunt) {
 
     // Configuration to be run (and then tested).
     apibspringmvc: {
-      default_options: {
-        options: {
-          packagePrefix: 'my.package'
-        },
-        files: {
-          //'.tmp': ['/Users/lweaver/repos/identityhub-rest-api/api-docs/src/*.apib']
-          'tmp': ['/Users/lweaver/repos/identityhub-rest-api/api-docs/tst/*.apib']
-        }
-      },
       index: {
         options: {
-          includePath: '/Users/lweaver/repos/identityhub-rest-api/api-docs/src',
+          includePath: ''/* api docs */,
           packagePrefix: 'my.package'
         },
         files: {
-          //'.tmp': ['/Users/lweaver/repos/identityhub-rest-api/api-docs/src/*.apib']
-          'tmp': ['/Users/lweaver/repos/identityhub-rest-api/api-docs/src/*.apib']
+          'tmp': [/* files */]
         }
       }
     },
