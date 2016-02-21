@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "mkdirp": "^0.5.1",
-    "apiblueprint-springmvc": "^0.1.0"
+    "apiblueprint-springmvc": "^0.1.12"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
