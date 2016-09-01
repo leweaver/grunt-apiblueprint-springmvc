@@ -3,7 +3,7 @@
 > Allows execution of the [apiblueprint-springmvc](https://github.com/ransico/apiblueprint-springmvc) generator, to generate SpringMVC source files from an apiblueprint specification.
 
 ## Getting Started
-This plugin requires Grunt. It also assumes that you have an understanding of [API Blueprint](https://apiblueprint.org), so that you can write apib files for this plugin to process!
+This plugin requires Grunt. It also assumes that you have an understanding of [API Blueprint](https://apiblueprint.org), so that you can write apib files for this plugin to process!!
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
