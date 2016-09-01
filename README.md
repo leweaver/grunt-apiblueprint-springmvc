@@ -1,3 +1,5 @@
+[![Travis CI Build Status](https://api.travis-ci.org/ransico/grunt-apiblueprint-springmvc.svg?branch=master)](https://travis-ci.org/ransico/grunt-apiblueprint-springmvc)
+
 # grunt-apiblueprint-springmvc
 
 > Allows execution of the [apiblueprint-springmvc](https://github.com/ransico/apiblueprint-springmvc) generator, to generate SpringMVC source files from an apiblueprint specification.
