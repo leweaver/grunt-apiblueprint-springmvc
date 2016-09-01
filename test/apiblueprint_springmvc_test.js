@@ -27,13 +27,37 @@ exports.apiblueprint_springmvc = {
     // setup here if necessary
     done();
   },
+
   default_options: function (test) {
-    test.expect(1);
 
-    var actual = grunt.file.read('tmp/controller/CouponsController.java');
-    var expected = grunt.file.read('test/expected/CouponsController.java');
+    var tests = [
+      { name: 'Test1', models: ['Test2Base', 'Test2ChildFlat', 'Test2ChildInherit']},
+      { name: 'Test2', models: ['Test1BlogPost', 'Test1Author']}
+    ];
 
-    test.equal(actual, expected, 'Generated controller should match.');
+    test.expect(9);
+
+    tests.forEach(function(testInstance){
+      var testName = testInstance.name;
+      testInstance.models.forEach(function(modelName) {
+        test.equal(
+          grunt.file.read('tmp/model/'+modelName+'.java'),
+          grunt.file.read('test/expected/'+modelName+'.java'),
+          'Generated '+testName+' model should match.');
+      });
+
+      // Controller
+      test.equal(
+        grunt.file.read('tmp/controller/'+testName+'Controller.java'),
+        grunt.file.read('test/expected/'+testName+'Controller.java'),
+        'Generated '+testName+' controller should match.');
+
+      // Service
+      test.equal(
+        grunt.file.read('tmp/service/'+testName+'ApiService.java'),
+        grunt.file.read('test/expected/'+testName+'ApiService.java'),
+        'Generated '+testName+' service should match.');
+    });
 
     test.done();
   }

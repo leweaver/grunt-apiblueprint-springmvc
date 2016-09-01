@@ -10,7 +10,7 @@ This resource represents one particular lookup type identified by its *lookupTyp
 ### Retrieve Lookup Type [GET]
 Retrieve a lookup type by its *lookupType*.
 
-+ Attributes (ReadSingleResponse[LookupType])
++ Attributes (LookupType)
 
 + Response 200 (application/json)
 
@@ -24,9 +24,9 @@ Retrieve a lookup type by its *lookupType*.
         }
 
 ### Update Lookup Type [PUT]
-Modify a lookup type by its *lookupType*.
+Modify a lookup type by its *lookupType*. Returns the updated entity object.
 
-+ Attributes (OperationResponse[LookupType])
++ Attributes (LookupType)
 
 + Request (application/json)
     + Attributes (LookupType)
@@ -57,3 +57,9 @@ Modify a lookup type by its *lookupType*.
                 { "field": "enabledFlag", "message": "Must have value 'Y' or 'N'" }
             ]
         }
+
+# Data Structures
+
+## LookupType (object)
++ type: `CURRENCIES` (string) - The unique identifier for this lookup type
++ name: `Currencies` (string) - The human readable display name of this type

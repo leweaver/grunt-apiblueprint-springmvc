@@ -1,0 +1,23 @@
+# Group Test 1
+
+## Test 1 [/posts]
+
+### Retrieve All Posts [GET]
++ Response 200 (application/json)
+    + Attributes (array[Test 1 Blog Post])
+
+# Data Structures
+
+## Test 1 Author (object)
+Parameters:
++ flattenParentClasses: true
+
+# Properties
++ name: Boba Fett (array[string], required) - Some Description
++ email: fett@intergalactic.com
+
+## Test 1 Blog Post (object)
++ id: 42 (number, required)
++ text: Hello World (string)
++ author (Test 1 Author) - Author of the blog post.
+

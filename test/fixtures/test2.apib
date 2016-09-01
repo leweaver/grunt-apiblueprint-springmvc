@@ -1,0 +1,23 @@
+# Group Test 2
+
+## Test 2 [/posts]
+
+### Retrieve All Posts [GET]
++ Response 200 (application/json)
+    + Attributes (array[Test 2 Blog Post])
+
+# Data Structures
+
+## Test 2 Base (object)
++ name: Boba Fett (array[string], required) - Some Description
+
+## Test 2 Child Inherit (Test 2 Base)
++ id: 42 (number, required)
+
+## Test 2 Child Flat (Test 2 Base)
+Parameters:
++ flattenParentClasses: true
+
+### Properties
++ id: 42 (number, required)
+
