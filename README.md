@@ -1,8 +1,8 @@
-[![Travis CI Build Status](https://api.travis-ci.org/ransico/grunt-apiblueprint-springmvc.svg?branch=master)](https://travis-ci.org/ransico/grunt-apiblueprint-springmvc)
+[![Travis CI Build Status](https://api.travis-ci.org/leweaver/grunt-apiblueprint-springmvc.svg?branch=master)](https://travis-ci.org/leweaver/grunt-apiblueprint-springmvc)
 
 # grunt-apiblueprint-springmvc
 
-> Allows execution of the [apiblueprint-springmvc](https://github.com/ransico/apiblueprint-springmvc) generator, to generate SpringMVC source files from an apiblueprint specification.
+> Allows execution of the [apiblueprint-springmvc](https://github.com/leweaver/apiblueprint-springmvc) generator, to generate SpringMVC source files from an apiblueprint specification.
 
 ## Getting Started
 This plugin requires Grunt. It also assumes that you have an understanding of [API Blueprint](https://apiblueprint.org), so that you can write apib files for this plugin to process!
