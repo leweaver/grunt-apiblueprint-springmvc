@@ -41,21 +41,21 @@ exports.apiblueprint_springmvc = {
       var testName = testInstance.name;
       testInstance.models.forEach(function(modelName) {
         test.equal(
-          grunt.file.read('tmp/model/'+modelName+'.java'),
-          grunt.file.read('test/expected/'+modelName+'.java'),
+          grunt.file.read('tmp/model/'+modelName+'.java').replace(/\r\n/g, '\n'),
+          grunt.file.read('test/expected/'+modelName+'.java').replace(/\r\n/g, '\n'),
           'Generated '+testName+' model should match.');
       });
 
       // Controller
       test.equal(
-        grunt.file.read('tmp/controller/'+testName+'Controller.java'),
-        grunt.file.read('test/expected/'+testName+'Controller.java'),
+        grunt.file.read('tmp/controller/'+testName+'Controller.java').replace(/\r\n/g, '\n'),
+        grunt.file.read('test/expected/'+testName+'Controller.java').replace(/\r\n/g, '\n'),
         'Generated '+testName+' controller should match.');
 
       // Service
       test.equal(
-        grunt.file.read('tmp/service/'+testName+'ApiService.java'),
-        grunt.file.read('test/expected/'+testName+'ApiService.java'),
+        grunt.file.read('tmp/service/'+testName+'ApiService.java').replace(/\r\n/g, '\n'),
+        grunt.file.read('test/expected/'+testName+'ApiService.java').replace(/\r\n/g, '\n'),
         'Generated '+testName+' service should match.');
     });
 
